@@ -1,6 +1,6 @@
 #ifndef COMMENT_H
 #define COMMENT_H
-#include"user.h"
+#include"User.h"
 #include<QString>
 
 using namespace std;

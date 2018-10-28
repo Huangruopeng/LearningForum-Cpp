@@ -1,4 +1,4 @@
-#include "post.h"
+#include "Post.h"
 
 post::post()
 {

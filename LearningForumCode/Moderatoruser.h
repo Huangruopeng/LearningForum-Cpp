@@ -1,6 +1,6 @@
 #ifndef MODERATORUSER_H
 #define MODERATORUSER_H
-#include"generaluser.h"
+#include"Generaluser.h"
 
 using namespace std;
 

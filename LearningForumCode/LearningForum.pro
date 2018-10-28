@@ -26,20 +26,26 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    post.cpp \
-    user.cpp \
-    comment.cpp \
-    board.cpp
+    Forum.cpp \
+    User.cpp \
+    Post.cpp \
+    Comment.cpp \
+    Board.cpp \
+    Administrator.cpp \
+    Generaluser.cpp \
+    Moderatoruser.cpp
 
 HEADERS += \
         mainwindow.h \
-    generaluser.h \
-    user.h \
-    administrator.h \
-    moderatoruser.h \
-    post.h \
-    comment.h \
-    board.h
+    Forum.h \
+    User.h \
+    Post.h \
+    Moderatoruser.h \
+    Generaluser.h \
+    Comment.h \
+    Administrator.h \
+    Board.h \
+    Globle.h
 
 FORMS += \
         mainwindow.ui

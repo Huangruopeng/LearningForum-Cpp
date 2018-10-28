@@ -1,6 +1,6 @@
 #ifndef ADMINISTRATOR_H
 #define ADMINISTRATOR_H
-#include"user.h"
+#include"User.h"
 using namespace std;
 class Administrator : public User
 {

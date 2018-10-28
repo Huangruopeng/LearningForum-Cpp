@@ -1,6 +1,6 @@
 #ifndef GENERALUSER_H
 #define GENERALUSER_H
-#include "user.h"
+#include "User.h"
 
 using namespace std;
 

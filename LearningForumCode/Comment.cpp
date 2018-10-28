@@ -1,4 +1,4 @@
-#include "comment.h"
+#include "Comment.h"
 
 Comment::Comment()
 {
