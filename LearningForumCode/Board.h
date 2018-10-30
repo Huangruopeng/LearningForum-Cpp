@@ -1,6 +1,6 @@
 #ifndef BOARD_H
 #define BOARD_H
-#include"post.h"
+#include"Post.h"
 #include<vector>
 
 

@@ -1,5 +1,0 @@
-#include"Generaluser.h"
-
-GeneralUser::GeneralUser(){
-    
-}
