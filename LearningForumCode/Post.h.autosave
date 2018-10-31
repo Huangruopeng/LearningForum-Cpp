@@ -20,7 +20,7 @@ private:
 public:
     Post();
     //void Like();
-    void set_post(QString,QString,QString,QString);
+    void set_post(QString,QString,QString,QString,QString);
    // void set_top();
     //void set_not_top();
     QString get_username();

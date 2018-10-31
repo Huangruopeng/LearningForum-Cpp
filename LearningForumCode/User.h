@@ -10,17 +10,19 @@ class User
 public:
     User();
     ~User();
-    void View_post(int);
-    void Change_username();
-    void Change_password();
-    QString get_uesername();
+    void initial();
+    void view_post(int);
+    void choose_board(int);
+    void change_username();
+    void change_password();
+    QString get_username();
     QString get_password();
     QString get_id();
-    QString get_username();
+    QString set_username();
     QString set_password();
-    void View_Information();
-    void User_login();
-    void User_logout();
+    void view_Information();
+    void user_login();
+    void user_logout();
 
 private:
     QString username;

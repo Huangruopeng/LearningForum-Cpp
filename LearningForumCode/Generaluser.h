@@ -9,11 +9,11 @@ class GeneralUser:public User
 public:
     GeneralUser();
     int board();
-    void Write_post();
+    void write_post();
     void write_comment();
     //void View_post();
     void delete_my_post();
-    void delete_my_comment();
+   // void delete_my_comment();
     int get_level();
     //纯虚函数
     int get_gender();
