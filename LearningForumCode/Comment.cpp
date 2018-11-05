@@ -1,14 +1,16 @@
 #include "Comment.h"
 #include <QDateTime>
+#include "Comment.h"
 Comment::Comment()
 {
 }
 
-void Comment::set_comment(QString id1,QString id2,QString c)
+void Comment::set_comment(QString id1,QString id2,QString c,QString T)
 {
     sender=id1;
     receiver=id2;
     content=c;
+    time=T;
 }
 
 QString Comment::get_sender()
@@ -28,6 +30,6 @@ QString Comment::get_content()
 
 QString Comment::get_time()
 {   QDateTime *datetime=new QDateTime(QDateTime::currentDateTime());
-    return datetime->date().tostring();
+    return datetime->date().toString();
     
 }

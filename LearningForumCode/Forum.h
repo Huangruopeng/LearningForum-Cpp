@@ -18,7 +18,7 @@ public:
     vector<GeneralUser*> general;
     vector<ModeratorUser*> moderator;
     void Init();
-    int login(QString, QString,int)
+    int login(QString name, QString password,int i);
     void logout();
 };
 

@@ -5,15 +5,15 @@
 #include"Administrator.h"
 #include"Generaluser.h"
 #include"Moderatoruser.h"
-
-extern Forum f;
-extern User *user;
-extern Administrator* admin;
-extern GeneralUser * general;
+static int type;
+static Forum f;
+static User *user;
+static Administrator* admin;
+static GeneralUser * general;
 //extern ModeratorUser* moderator;
-extern int current_board;
-extern int current_admin;
-extern int current_general;
-extern int current_post;
+static int current_board;//is not static?
+static int current_admin;
+static int current_general;
+static int current_post;
 
 #endif // GLOBLE_H

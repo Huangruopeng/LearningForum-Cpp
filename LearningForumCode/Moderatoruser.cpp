@@ -10,5 +10,5 @@ int ModeratorUser::get_board()
 void ModeratorUser::delete_post(int i)
 {
     f.board[current_board-1]->p.erase(f.board[current_board-1]->p.begin()+i);
-    qDebug()<<f.board[current_board-1]->p.size();
+    //qDebug()<<f.board[current_board-1]->p.size();
 }

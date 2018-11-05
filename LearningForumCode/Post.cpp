@@ -1,7 +1,12 @@
 #include "Post.h"
+#include "Comment.h"
 
 Post::Post()
 {
+}
+void Post::initial()
+{
+    is_commented=0;
 }
 
 QString Post::get_content()
@@ -37,7 +42,7 @@ void Post::add_comment(Comment *a)
     this->C.push_back(a);
 }
 
-void Post::set_comment(vector<comment *> s)
+void Post::set_comment(vector<Comment *> s)
 {
     C=s;
 }

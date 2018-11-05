@@ -25,7 +25,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp \
     Forum.cpp \
     User.cpp \
     Post.cpp \
@@ -33,10 +32,13 @@ SOURCES += \
     Board.cpp \
     Administrator.cpp \
     Generaluser.cpp \
-    Moderatoruser.cpp
+    Moderatoruser.cpp \
+    EnterWin.cpp \
+    Register.cpp \
+    BoardWindows.cpp \
+    RegistAdmin.cpp
 
 HEADERS += \
-        mainwindow.h \
     Forum.h \
     User.h \
     Post.h \
@@ -45,7 +47,18 @@ HEADERS += \
     Comment.h \
     Administrator.h \
     Board.h \
-    Globle.h
+    Globle.h \
+    EnterWin.h \
+    Register.h \
+    BoardWindows.h \
+    RegistAdmin.h
 
 FORMS += \
-        mainwindow.ui
+    EnterWin.ui \
+    Register.ui \
+    BoardWindows.ui \
+    RegistAdmin.ui
+
+RESOURCES += \
+    resources.qrc \
+    picture.qrc

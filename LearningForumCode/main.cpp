@@ -1,11 +1,12 @@
-#include "mainwindow.h"
+#include "EnterWin.h"
 #include <QApplication>
+#include "Globle.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+     EnterWin w;
+     w.show();
 
     return a.exec();
 }

@@ -2,6 +2,7 @@
 #define POST_H
 #include<vector>
 #include<QString>
+#include"Comment.h"
 
 using namespace std;
 
@@ -20,7 +21,7 @@ private:
 public:
     Post();
     //void Like();
-    void set_post(QString,QString,QString,QString);
+    void set_post(QString,QString,QString,QString,QString);
    // void set_top();
     //void set_not_top();
     QString get_username();
@@ -30,7 +31,7 @@ public:
     //int get_like_num();
     void add_comment(Comment* a);
     vector <Comment*> get_comment();
-    void set_comment(vector <comment *>);
+    void set_comment(vector <Comment *>);
     int is_commented;
     void initial();
 

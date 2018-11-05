@@ -16,6 +16,10 @@ void User::change_username(QString s)
     username=s;
 }
 
+void User::change_id(QString s)
+{
+    id=s;
+}
 QString User::get_id()
 {
     return id;
@@ -63,4 +67,9 @@ void User::initial()
     password="";
     is_online=0;
     board=0;
+}
+
+void User::set_profile_picture()
+{
+
 }
