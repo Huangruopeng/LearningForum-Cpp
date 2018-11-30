@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>51</x>
@@ -29,7 +29,7 @@
        <string notr="true">font: 18pt &quot;华文琥珀&quot;;</string>
       </property>
       <property name="text">
-       <string>注册新用户</string>
+       <string>注册新管理员</string>
       </property>
       <property name="textFormat">
        <enum>Qt::PlainText</enum>
@@ -185,7 +185,7 @@
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="2,6,2">
+     <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="2,0,6,2">
       <item>
        <widget class="QLabel" name="label_6">
         <property name="sizePolicy">
@@ -199,6 +199,16 @@
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_13">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>*</string>
         </property>
        </widget>
       </item>
