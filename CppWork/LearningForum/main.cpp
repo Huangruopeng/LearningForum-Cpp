@@ -2,7 +2,7 @@
 #include <QApplication>
 //#include "Globle.h"
 #include "Forum.h"
-#include "BoardWin.h".h"
+#include "BoardWin.h"
 
 int type=0;//定义用户类型 1：普通用户   2：版主   3：管理员
 Forum f;
@@ -14,6 +14,7 @@ int current_moderator;
 int current_post;
 //int deleteBoard;
 //int deletePost;
+BoardWin *boardwindows;
 int main(int argc, char *argv[])
 {
 

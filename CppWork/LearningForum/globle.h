@@ -2,9 +2,10 @@
 #define GLOBLE_H
 #include"Forum.h"
 #include"User.h"
-#include"Administrator.h"
-#include"Generaluser.h"
-#include"Moderatoruser.h"
+#include"UserAdministrator.h"
+#include"UserGeneral.h"
+#include"UserModerator.h"
+#include "BoardWin.h"
 extern int type;
 extern Forum f;
 
@@ -13,6 +14,7 @@ extern int current_admin;
 extern int current_general;
 extern int current_moderator;
 extern int current_post;
+extern BoardWin *boardwindows;
 //extern int deleteBoard;
 //extern int deletePost;
 

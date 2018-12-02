@@ -26,12 +26,9 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         BoardWin.cpp \
-    Administrator.cpp \
     Board.cpp \
     Comment.cpp \
     Forum.cpp \
-    GeneralUser.cpp \
-    ModeratorUser.cpp \
     Post.cpp \
     User.cpp \
     EnterWin.cpp \
@@ -41,16 +38,17 @@ SOURCES += \
     WritePostWin.cpp \
     DeletePostWin.cpp \
     AppointWin.cpp \
-    dialog.cpp
+    UserInfoWin.cpp \
+    UserGeneral.cpp \
+    UserModerator.cpp \
+    UserAdministrator.cpp \
+    UserMyInfoWin.cpp
 
 HEADERS += \
         BoardWin.h \
-    Administrator.h \
     Board.h \
     Comment.h \
     Forum.h \
-    GeneralUser.h \
-    ModeratorUser.h \
     Post.h \
     User.h \
     EnterWin.h \
@@ -61,7 +59,11 @@ HEADERS += \
     WritePostWin.h \
     DeletePostWin.h \
     AppointWin.h \
-    dialog.h
+    UserInfoWin.h \
+    UserGeneral.h \
+    UserModerator.h \
+    UserAdministrator.h \
+    UserMyInfoWin.h
 
 FORMS += \
         BoardWin.ui \
@@ -72,7 +74,8 @@ FORMS += \
     WritePostWin.ui \
     DeletePostWin.ui \
     AppointWin.ui \
-    dialog.ui
+    UserInfoWin.ui \
+    UserMyInfoWin.ui
 
 RESOURCES += \
     picture.qrc

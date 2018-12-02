@@ -22,21 +22,18 @@
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="2,3">
           <item>
-           <widget class="QLabel" name="ProfilePicture_label">
+           <widget class="QPushButton" name="Profile_btn">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
             <property name="styleSheet">
-             <string notr="true">image: url(:/png/ProfilePic.png);</string>
+             <string notr="true">border-image: url(:/png/ProfilePic.png);</string>
             </property>
             <property name="text">
              <string/>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
             </property>
            </widget>
           </item>
@@ -700,11 +697,23 @@
     <addaction name="separator"/>
     <addaction name="actionAppoiny_Disappoint"/>
    </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>注销</string>
+    </property>
+    <addaction name="actionlogout"/>
+   </widget>
    <addaction name="menuj"/>
+   <addaction name="menu"/>
   </widget>
   <action name="actionAppoiny_Disappoint">
    <property name="text">
     <string>Appoiny/Disappoint</string>
+   </property>
+  </action>
+  <action name="actionlogout">
+   <property name="text">
+    <string>logout</string>
    </property>
   </action>
  </widget>

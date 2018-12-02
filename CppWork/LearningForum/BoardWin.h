@@ -59,6 +59,12 @@ private slots:
 
     void refresh();
 
+    void on_set_btn_clicked();
+
+    void on_Profile_btn_clicked();
+
+    void on_actionlogout_triggered();
+
 private:
     Ui::BoardWin *ui;
 };

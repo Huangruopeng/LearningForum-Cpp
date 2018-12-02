@@ -4,10 +4,10 @@
 Post::Post()
 {
 }
-void Post::initial()
+/*void Post::initial()
 {
     is_commented=0;
-}
+}*/
 
 QString Post::get_content()
 {

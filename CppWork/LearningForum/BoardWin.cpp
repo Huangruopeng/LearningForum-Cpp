@@ -2,7 +2,6 @@
 #include "ui_BoardWin.h"
 #include "PostWin.h"
 #include "WritePostWin.h"
-//#include <QTextCodec>
 #include <QAction>
 #include <QMenu>
 #include<QDebug>
@@ -11,7 +10,8 @@
 #include "DeletePostWin.h"
 #include <QPushButton>
 #include "AppointWin.h"
-#include "dialog.h"
+#include "UserInfoWin.h"
+#include "EnterWin.h"
 BoardWin::BoardWin(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::BoardWin)
@@ -54,8 +54,10 @@ void BoardWin::on_writepost_btn_clicked()
 
 void BoardWin::on_delete_clicked()
 {
-
     if(type==1){
+        if(f.general[current_general]->delete_post()==0)
+            QMessageBox::warning( this,("Warning"), ("You don't have the priority!"));
+        /*
          if(f.board[current_board]->post[current_post]->get_username()==f.general[current_general]->get_username() && !f.board[current_board]->post[current_post]->is_commented)
          {
              DeletePostWin *d=new DeletePostWin;
@@ -63,16 +65,23 @@ void BoardWin::on_delete_clicked()
          }
          else
              QMessageBox::warning( this,("Warning"), ("You don't have the priority!"));
+          */
     }
     else if(type==2){
+        if(f.moderator[current_moderator]->delete_post()==0)
+            QMessageBox::warning( this,("Warning"), ("You don't have the priority!"));
+
+        /*
         if(f.board[current_board]->get_moderator()==f.moderator[current_moderator]->get_username())
         {   DeletePostWin *d=new DeletePostWin;
             d->show();
         }
         else
             QMessageBox::warning( this,("Warning"), ("You don't have the priority!"));
+            */
     }
     else if(type==3){
+       // f.admin[current_admin]->delete_post();
         DeletePostWin *d=new DeletePostWin;
         d->show();
      }
@@ -387,4 +396,31 @@ void BoardWin::refresh()
 void BoardWin::on_refresh_btn_clicked()
 {
       this->refresh();
+}
+
+void BoardWin::on_set_btn_clicked()
+{    UserInfoWin *uw=new UserInfoWin;
+     uw->show();
+
+}
+
+void BoardWin::on_Profile_btn_clicked()
+{
+    if(type==1){
+       f.general[current_general]->view_my_information();
+    }
+    else if(type==2){
+        f.moderator[current_moderator]->view_my_information();
+    }
+    else if(type==3){
+        f.admin[current_admin]->view_my_information();
+    }
+
+}
+
+void BoardWin::on_actionlogout_triggered()
+{
+    boardwindows->close();
+    EnterWin *ew=new EnterWin;
+    ew->show();
 }

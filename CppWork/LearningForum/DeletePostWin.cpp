@@ -16,9 +16,11 @@ DeletePostWin::~DeletePostWin()
 void DeletePostWin::on_OK_btn_clicked()
 {
     if(type==3)
-        f.admin[current_admin]->delete_post(current_board,current_post);
+        f.admin[current_admin]->delete_post_real(current_board,current_post);
     else if(type==2)
-        f.moderator[current_moderator]->delete_post(current_board,current_post);
+        f.moderator[current_moderator]->delete_post_real(current_board,current_post);
+    else if(type==1)
+        f.general[current_general]->delete_post_real(current_board,current_post);
 
     this->close();
         //f.board[current_board]->post.erase(f.board[current_board]->post.begin()+current_post);

@@ -22,6 +22,7 @@ EnterWin::~EnterWin()
 
 void EnterWin::on_OK_btn_clicked()
 {
+
     QString name=ui->username_LE->text();
     QString password=ui->password_LE->text();
    // this->close();
@@ -36,6 +37,7 @@ void EnterWin::on_OK_btn_clicked()
               if(i!=-1){
                    current_admin=i;
                    key=1;
+                   f.admin[current_admin]->user_login(f.admin[current_admin]->get_username());
                 }
               else{
                   QMessageBox::warning(this,("提示"), ("用户名或密码错误!"));
@@ -48,10 +50,12 @@ void EnterWin::on_OK_btn_clicked()
                  if(type==1){
                     current_general=i;
                     key=1;
+                    f.general[current_general]->user_login(f.general[current_general]->get_username());
                  }
                  else if(type==2){
                     current_moderator=i;
                     key=1;
+                    f.moderator[current_moderator]->user_login(f.moderator[current_moderator]->get_username());
                   }
              }
            else
@@ -59,9 +63,11 @@ void EnterWin::on_OK_btn_clicked()
         }
 
            if(key==1){
-              this->close();
-              BoardWin *b=new BoardWin;
-              b->show();
+              this->close();              
+              //BoardWin *b=new BoardWin;
+              //b->show();
+              boardwindows =new BoardWin;
+              boardwindows->show();
              }
      }
     //this->close();

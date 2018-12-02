@@ -31,7 +31,7 @@ public:
     vector <Comment*> get_comment();
 
     void add_comment(Comment* a);
-    void initial();
+    //void initial();
     void set_post(QString title,QString content,QString id,QString poster,QString time);
     //void set_comment(vector <Comment *>);
 

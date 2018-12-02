@@ -15,6 +15,13 @@ public:
     explicit RegistWin(QWidget *parent = 0);
     ~RegistWin();
 
+private slots:
+    void on_Cancel_btn_clicked();
+
+    void on_OK_btn_clicked();
+
+    void on_RegistAdmin_btn_clicked();
+
 private:
     Ui::RegistWin *ui;
 };

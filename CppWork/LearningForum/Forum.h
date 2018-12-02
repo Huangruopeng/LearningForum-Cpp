@@ -2,9 +2,9 @@
 #define FORUM_H
 #include "Board.h"
 #include "User.h"
-#include "Administrator.h"
-#include "Generaluser.h"
-#include "Moderatoruser.h"
+#include "UserAdministrator.h"
+#include "UserGeneral.h"
+#include "UserModerator.h"
 #include <iostream>
 
 using namespace std;

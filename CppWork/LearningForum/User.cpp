@@ -1,9 +1,9 @@
 #include "User.h"
-
-
+#include "UserMyInfoWin.h"
+#include "PostWin.h"
+#include <QMessageBox>
 User::User()
 {
-
 }
 
 void User::change_password(QString s)
@@ -49,31 +49,27 @@ void User::set_id(QString s)
 {
     id=s;
 }
-void User::choose_board(int i)
-{
-    board=i;
-}
 
-void User::view_post(int i)
+void User::view_post()
 {
     //弹出帖子窗口
 }
 
-void User::view_Information()
+void User::view_my_information()
 {
-    //print all information
+    UserMyInfoWin *myi= new UserMyInfoWin;
+    myi->show();
 }
 
-void User::initial()
+void User::user_login(QString name)
 {
-    id="";
-    username="";
-    password="";
-    is_online=0;
-    board=0;
+    QMessageBox::information(NULL, "欢迎使用本学习论坛", name+"登录成功！");
 }
 
-void User::set_profile_picture()
+
+
+void User::user_logout()
 {
 
 }
+

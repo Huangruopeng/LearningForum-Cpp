@@ -1,7 +1,8 @@
 #include "Forum.h"
-#include "Administrator.h"
+#include "UserAdministrator.h"
 #include "User.h"
-#include "Generaluser.h"
+#include "UserGeneral.h"
+#include "UserModerator.h"
 #include "Post.h"
 #include "Comment.h"
 #include "Globle.h"
@@ -74,32 +75,43 @@ void Forum::Init()
 
     GeneralUser *g1,*g2,*g3;
     g1=new GeneralUser;
-    g1->set_username("byr001");
+    /*g1->set_username("byr001");
     g1->set_password("66");
-    g1->set_id("g001");
+    g1->set_id("g001");*/
+    g1->initial("byr001","66","g001");
     f.general.push_back(g1);
+
     g2=new GeneralUser;
-    g2->set_username("byr002");
+    /*g2->set_username("byr002");
     g2->set_password("66");
-    g2->set_id("g002");
+    g2->set_id("g002");*/
+    g2->initial("byr002","66","g002");
     f.general.push_back(g2);
+
     g3=new GeneralUser;
-    g3->set_username("byr003");
+    /*g3->set_username("byr003");
     g3->set_password("66");
-    g3->set_id("g003");
+    g3->set_id("g003");*/
+    g3->initial("byr003","66","g003");
     f.general.push_back(g3);
+
+    ModeratorUser *m1=new ModeratorUser;
+    m1->initial("byr004","66","m004",0);
+    f.moderator.push_back(m1);
 
 
     Administrator *a1=new Administrator;
-    a1->set_username("vip001");
+    /*a1->set_username("vip001");
     a1->set_password("88");
-    a1->set_id("a001");
+    a1->set_id("a001");*/
+    a1->initial("vip001","88","a001");
     f.admin.push_back(a1);
 
     Administrator *a2=new Administrator;
-    a2->set_username("vip002");
+   /* a2->set_username("vip002");
     a2->set_password("88");
-    a2->set_id("a002");
+    a2->set_id("a002");*/
+    a2->initial("vip002","88","a002");
     f.admin.push_back(a2);
 
 
@@ -129,6 +141,8 @@ void Forum::Init()
     p1->set_post("[王道]北师小姐姐征友","北师小姐想找北邮小哥哥","001","byr001","2018.1.1");
     f.board[0]->post.push_back(p1);
     f.board[0]->post[0]->is_commented=1;
+    f.board[0]->set_moderator("byr004");
+
     Post *p2=new Post;
     p2->set_post("北邮计算机院男神","集样貌与才华于一体","002","byr002","2018.1.2");
     f.board[0]->post.push_back(p2);

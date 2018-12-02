@@ -13,9 +13,10 @@ public:
     QPicture profile_picture;
     User();
     ~User();
-    void initial();
-    void view_post(int);
-    void choose_board(int);
+
+    void view_post();
+   // virtual void delete_post()=0;
+    //void choose_board(int);
     void change_username(QString s);
     void change_password(QString s);
     void change_id(QString s);
@@ -25,18 +26,27 @@ public:
     void set_username(QString s);
     void set_password(QString s);
     void set_id(QString s);
-    void view_Information();
-    void user_login();
+
+
+
+
+
+
+
+    void view_my_information();//查看自己信息
+    void view_all_information();
+
+    virtual void initial(QString name,QString password, QString id)=0;
+    void user_login(QString name);
     void user_logout();
-    void set_profile_picture();
 
-
+    //void set_profile_picture();
 private:
     QString username;
     QString password;
     QString id;
     int is_online;
-    int board;
+    //int board;
 
 
 

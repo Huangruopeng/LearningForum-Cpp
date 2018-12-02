@@ -198,7 +198,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="confirm_password_LE_3"/>
+          <widget class="QLineEdit" name="WeChat_LE"/>
          </item>
          <item>
           <spacer name="horizontalSpacer_5">
