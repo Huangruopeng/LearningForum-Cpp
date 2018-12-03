@@ -4,14 +4,16 @@
 #include "WritePostWin.h"
 #include <QAction>
 #include <QMenu>
-#include<QDebug>
+#include <QDebug>
 #include "Globle.h"
-#include<QMessageBox>
+#include <QMessageBox>
 #include "DeletePostWin.h"
 #include <QPushButton>
 #include "AppointWin.h"
 #include "UserInfoWin.h"
 #include "EnterWin.h"
+#include <string.h>
+
 BoardWin::BoardWin(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::BoardWin)
@@ -423,4 +425,53 @@ void BoardWin::on_actionlogout_triggered()
     boardwindows->close();
     EnterWin *ew=new EnterWin;
     ew->show();
+}
+
+
+
+void BoardWin::on_search_btn_clicked()
+{   string s=ui->search_LE->text().toStdString();
+    if (s.empty()==1){
+        QMessageBox::warning( this,("Warning"), ("搜索内容不能为空!"));
+        return;
+    }
+     ui->tabWidget1->setCurrentIndex(8);
+    ui->listWidget_search->clear();
+    int founded=0;
+    //qDebug()<<ui->search_LE->text()<<endl;
+    for(int b=0;b<f.board.size();b++){
+        for(int p=0;p<f.board[b]->post.size();p++){
+            string t =f.board[b]->post[p]->get_title().toStdString();
+           if(t.find(s)!= string::npos){
+
+                founded=1;
+                ui->listWidget_search->addItem(f.board[b]->post[p]->get_title());
+            }
+        }
+    }
+    if(founded==0)
+       QMessageBox::warning( this,("Warning"), ("没有找到!"));
+
+    //if(b==f.board.size() && p=f.)
+ // ui->listWidget_search->addItem("没有找到");
+}
+
+void BoardWin::on_listWidget_search_clicked(const QModelIndex &index)
+{
+    QString s=ui->listWidget_search->currentItem()->text();
+
+    for(int b=0;b<f.board.size();b++){
+        for(int p=0;p<f.board[b]->post.size();p++){
+            //string t =f.board[b]->post[p]->get_title().toStdString();
+            if(s==f.board[b]->post[p]->get_title()){
+                current_board=b;
+                current_post=p;
+                PostWin *p=new PostWin;
+                p->show();
+               //ui->listWidget_search->addItem(f.board[b]->post[p]->get_title());
+                break;
+            }
+
+        }
+    }
 }

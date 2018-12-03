@@ -1690,7 +1690,8 @@ debug/BoardWin.o: ../LearningForum/BoardWin.cpp ../LearningForum/BoardWin.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qmessagebox.h \
 		../LearningForum/DeletePostWin.h \
 		../LearningForum/AppointWin.h \
-		../LearningForum/UserInfoWin.h
+		../LearningForum/UserInfoWin.h \
+		../LearningForum/EnterWin.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\BoardWin.o ..\LearningForum\BoardWin.cpp
 
 debug/Board.o: ../LearningForum/Board.cpp ../LearningForum/Board.h \
@@ -1982,14 +1983,38 @@ debug/Forum.o: ../LearningForum/Forum.cpp ../LearningForum/Forum.h \
 		../LearningForum/UserGeneral.h \
 		../LearningForum/UserModerator.h \
 		../LearningForum/Globle.h \
-		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/QDebug \
-		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qdebug.h \
+		../LearningForum/BoardWin.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QMainWindow \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qmainwindow.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qtwidgetsglobal.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qtwidgets-config.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qwidget.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qpalette.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qbrush.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qpixmap.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qfont.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qfontmetrics.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qfontinfo.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qsizepolicy.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qcursor.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qkeysequence.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qevent.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qvariant.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qmap.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qdebug.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qtextstream.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qlocale.h \
-		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qvariant.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qset.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qcontiguouscache.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qurl.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qurlquery.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qfile.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qfiledevice.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qvector2d.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qtouchdevice.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qtabwidget.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qicon.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/QDebug \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/QDateTime \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qdatetime.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\Forum.o ..\LearningForum\Forum.cpp
@@ -2209,7 +2234,9 @@ debug/User.o: ../LearningForum/User.cpp ../LearningForum/User.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qfiledevice.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qvector2d.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qtouchdevice.h \
-		../LearningForum/PostWin.h
+		../LearningForum/PostWin.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QMessageBox \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\User.o ..\LearningForum\User.cpp
 
 debug/EnterWin.o: ../LearningForum/EnterWin.cpp ../LearningForum/EnterWin.h \
@@ -2391,11 +2418,11 @@ debug/EnterWin.o: ../LearningForum/EnterWin.cpp ../LearningForum/EnterWin.h \
 		../LearningForum/UserAdministrator.h \
 		../LearningForum/UserGeneral.h \
 		../LearningForum/UserModerator.h \
+		../LearningForum/BoardWin.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QMainWindow \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qmainwindow.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QMessageBox \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qmessagebox.h \
-		../LearningForum/BoardWin.h \
 		../LearningForum/RegistWin.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\EnterWin.o ..\LearningForum\EnterWin.cpp
 
@@ -2737,6 +2764,9 @@ debug/RegistWin.o: ../LearningForum/RegistWin.cpp ../LearningForum/RegistWin.h \
 		../LearningForum/UserAdministrator.h \
 		../LearningForum/UserGeneral.h \
 		../LearningForum/UserModerator.h \
+		../LearningForum/BoardWin.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QMainWindow \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qmainwindow.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QMessageBox \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\RegistWin.o ..\LearningForum\RegistWin.cpp
@@ -2929,6 +2959,9 @@ debug/PostWin.o: ../LearningForum/PostWin.cpp ../LearningForum/PostWin.h \
 		../LearningForum/UserAdministrator.h \
 		../LearningForum/UserGeneral.h \
 		../LearningForum/UserModerator.h \
+		../LearningForum/BoardWin.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QMainWindow \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qmainwindow.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\PostWin.o ..\LearningForum\PostWin.cpp
 
@@ -3117,6 +3150,9 @@ debug/WritePostWin.o: ../LearningForum/WritePostWin.cpp ../LearningForum/WritePo
 		../LearningForum/UserAdministrator.h \
 		../LearningForum/UserGeneral.h \
 		../LearningForum/UserModerator.h \
+		../LearningForum/BoardWin.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QMainWindow \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qmainwindow.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QMessageBox \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\WritePostWin.o ..\LearningForum\WritePostWin.cpp
@@ -3291,7 +3327,10 @@ debug/DeletePostWin.o: ../LearningForum/DeletePostWin.cpp ../LearningForum/Delet
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qpicture.h \
 		../LearningForum/UserAdministrator.h \
 		../LearningForum/UserGeneral.h \
-		../LearningForum/UserModerator.h
+		../LearningForum/UserModerator.h \
+		../LearningForum/BoardWin.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QMainWindow \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qmainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\DeletePostWin.o ..\LearningForum\DeletePostWin.cpp
 
 debug/AppointWin.o: ../LearningForum/AppointWin.cpp ../LearningForum/AppointWin.h \
@@ -3472,6 +3511,9 @@ debug/AppointWin.o: ../LearningForum/AppointWin.cpp ../LearningForum/AppointWin.
 		../LearningForum/UserAdministrator.h \
 		../LearningForum/UserGeneral.h \
 		../LearningForum/UserModerator.h \
+		../LearningForum/BoardWin.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QMainWindow \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qmainwindow.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QMessageBox \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\AppointWin.o ..\LearningForum\AppointWin.cpp
@@ -3647,7 +3689,10 @@ debug/UserInfoWin.o: ../LearningForum/UserInfoWin.cpp ../LearningForum/UserInfoW
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qpicture.h \
 		../LearningForum/UserAdministrator.h \
 		../LearningForum/UserGeneral.h \
-		../LearningForum/UserModerator.h
+		../LearningForum/UserModerator.h \
+		../LearningForum/BoardWin.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QMainWindow \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qmainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\UserInfoWin.o ..\LearningForum\UserInfoWin.cpp
 
 debug/UserGeneral.o: ../LearningForum/UserGeneral.cpp ../LearningForum/UserGeneral.h \
@@ -3757,9 +3802,9 @@ debug/UserGeneral.o: ../LearningForum/UserGeneral.cpp ../LearningForum/UserGener
 		../LearningForum/Board.h \
 		../LearningForum/UserAdministrator.h \
 		../LearningForum/UserModerator.h \
-		../LearningForum/DeletePostWin.h \
-		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QDialog \
-		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qdialog.h \
+		../LearningForum/BoardWin.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QMainWindow \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qmainwindow.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qtwidgetsglobal.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qtwidgets-config.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qwidget.h \
@@ -3779,6 +3824,11 @@ debug/UserGeneral.o: ../LearningForum/UserGeneral.cpp ../LearningForum/UserGener
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qfiledevice.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qvector2d.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qtouchdevice.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qtabwidget.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qicon.h \
+		../LearningForum/DeletePostWin.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QDialog \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qdialog.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QMessageBox \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\UserGeneral.o ..\LearningForum\UserGeneral.cpp
@@ -3882,9 +3932,9 @@ debug/UserModerator.o: ../LearningForum/UserModerator.cpp ../LearningForum/UserM
 		../LearningForum/Post.h \
 		../LearningForum/Comment.h \
 		../LearningForum/UserAdministrator.h \
-		../LearningForum/DeletePostWin.h \
-		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QDialog \
-		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qdialog.h \
+		../LearningForum/BoardWin.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QMainWindow \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qmainwindow.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qtwidgetsglobal.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qtwidgets-config.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qwidget.h \
@@ -3910,7 +3960,12 @@ debug/UserModerator.o: ../LearningForum/UserModerator.cpp ../LearningForum/UserM
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qfile.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qfiledevice.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qvector2d.h \
-		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qtouchdevice.h
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qtouchdevice.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qtabwidget.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qicon.h \
+		../LearningForum/DeletePostWin.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QDialog \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qdialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\UserModerator.o ..\LearningForum\UserModerator.cpp
 
 debug/UserAdministrator.o: ../LearningForum/UserAdministrator.cpp ../LearningForum/UserAdministrator.h \
@@ -4011,7 +4066,38 @@ debug/UserAdministrator.o: ../LearningForum/UserAdministrator.cpp ../LearningFor
 		../LearningForum/Forum.h \
 		../LearningForum/Board.h \
 		../LearningForum/Post.h \
-		../LearningForum/Comment.h
+		../LearningForum/Comment.h \
+		../LearningForum/BoardWin.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QMainWindow \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qmainwindow.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qtwidgetsglobal.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qtwidgets-config.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qwidget.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qpalette.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qbrush.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qpixmap.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qfont.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qfontmetrics.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qfontinfo.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qsizepolicy.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qcursor.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qkeysequence.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qevent.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qvariant.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qmap.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qdebug.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qtextstream.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qlocale.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qset.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qcontiguouscache.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qurl.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qurlquery.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qfile.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qfiledevice.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qvector2d.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qtouchdevice.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qtabwidget.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qicon.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\UserAdministrator.o ..\LearningForum\UserAdministrator.cpp
 
 debug/UserMyInfoWin.o: ../LearningForum/UserMyInfoWin.cpp ../LearningForum/UserMyInfoWin.h \
@@ -4120,6 +4206,46 @@ debug/UserMyInfoWin.o: ../LearningForum/UserMyInfoWin.cpp ../LearningForum/UserM
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qvector2d.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qtouchdevice.h \
 		ui_UserMyInfoWin.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/QVariant \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QAction \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qaction.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qicon.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qactiongroup.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QApplication \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qapplication.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qcoreapplication.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qeventloop.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qguiapplication.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qinputmethod.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QButtonGroup \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qbuttongroup.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QHBoxLayout \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qboxlayout.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qlayout.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qlayoutitem.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qgridlayout.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QHeaderView \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qheaderview.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qabstractitemview.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qframe.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qabstractitemmodel.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qitemselectionmodel.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qstyleoption.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qabstractspinbox.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qvalidator.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qregularexpression.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qslider.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qabstractslider.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qstyle.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qtabbar.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qtabwidget.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qrubberband.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QLabel \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qlabel.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QVBoxLayout \
 		../LearningForum/Globle.h \
 		../LearningForum/Forum.h \
 		../LearningForum/Board.h \
@@ -4130,8 +4256,6 @@ debug/UserMyInfoWin.o: ../LearningForum/UserMyInfoWin.cpp ../LearningForum/UserM
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/QMovie \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qmovie.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qimagereader.h \
-		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qcoreapplication.h \
-		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qeventloop.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qimageiohandler.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qplugin.h \
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtCore/qpointer.h \
@@ -4142,7 +4266,10 @@ debug/UserMyInfoWin.o: ../LearningForum/UserMyInfoWin.cpp ../LearningForum/UserM
 		E:/Qt5.10/5.10.1/mingw53_32/include/QtGui/qpicture.h \
 		../LearningForum/UserAdministrator.h \
 		../LearningForum/UserGeneral.h \
-		../LearningForum/UserModerator.h
+		../LearningForum/UserModerator.h \
+		../LearningForum/BoardWin.h \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/QMainWindow \
+		E:/Qt5.10/5.10.1/mingw53_32/include/QtWidgets/qmainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\UserMyInfoWin.o ..\LearningForum\UserMyInfoWin.cpp
 
 debug/qrc_picture.o: debug/qrc_picture.cpp 

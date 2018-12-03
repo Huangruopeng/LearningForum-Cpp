@@ -50,7 +50,8 @@ public:
     {
         if (EnterWin->objectName().isEmpty())
             EnterWin->setObjectName(QStringLiteral("EnterWin"));
-        EnterWin->resize(400, 300);
+        EnterWin->resize(800, 500);
+        EnterWin->setMinimumSize(QSize(800, 500));
         verticalLayout_2 = new QVBoxLayout(EnterWin);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         EnterPicture_label = new QLabel(EnterWin);

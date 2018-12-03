@@ -65,6 +65,12 @@ private slots:
 
     void on_actionlogout_triggered();
 
+    //void on_pushButton_clicked();
+
+    void on_search_btn_clicked();
+
+    void on_listWidget_search_clicked(const QModelIndex &index);
+
 private:
     Ui::BoardWin *ui;
 };
