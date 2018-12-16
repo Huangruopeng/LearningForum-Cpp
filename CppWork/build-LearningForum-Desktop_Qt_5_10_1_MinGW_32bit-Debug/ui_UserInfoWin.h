@@ -34,8 +34,10 @@ public:
     QLabel *label;
     QTabWidget *tabWidget;
     QWidget *tab_9;
+    QVBoxLayout *verticalLayout_6;
     QListWidget *listWidget_general;
     QWidget *tab_10;
+    QVBoxLayout *verticalLayout_5;
     QListWidget *listWidget_moderator;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
@@ -89,15 +91,23 @@ public:
         tabWidget->setMaximumSize(QSize(3000, 3000));
         tab_9 = new QWidget();
         tab_9->setObjectName(QStringLiteral("tab_9"));
+        verticalLayout_6 = new QVBoxLayout(tab_9);
+        verticalLayout_6->setObjectName(QStringLiteral("verticalLayout_6"));
         listWidget_general = new QListWidget(tab_9);
         listWidget_general->setObjectName(QStringLiteral("listWidget_general"));
-        listWidget_general->setGeometry(QRect(0, 0, 341, 291));
+
+        verticalLayout_6->addWidget(listWidget_general);
+
         tabWidget->addTab(tab_9, QString());
         tab_10 = new QWidget();
         tab_10->setObjectName(QStringLiteral("tab_10"));
+        verticalLayout_5 = new QVBoxLayout(tab_10);
+        verticalLayout_5->setObjectName(QStringLiteral("verticalLayout_5"));
         listWidget_moderator = new QListWidget(tab_10);
         listWidget_moderator->setObjectName(QStringLiteral("listWidget_moderator"));
-        listWidget_moderator->setGeometry(QRect(0, 0, 351, 261));
+
+        verticalLayout_5->addWidget(listWidget_moderator);
+
         tabWidget->addTab(tab_10, QString());
 
         verticalLayout_2->addWidget(tabWidget);
@@ -214,7 +224,7 @@ public:
 
         retranslateUi(UserInfoWin);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(UserInfoWin);

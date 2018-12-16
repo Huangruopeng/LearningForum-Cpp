@@ -37,6 +37,9 @@ public:
     QHBoxLayout *horizontalLayout_3;
     QLabel *username_label_3;
     QLabel *type_lb;
+    QHBoxLayout *horizontalLayout_6;
+    QLabel *username_label_2;
+    QLabel *myboard_lb;
     QHBoxLayout *horizontalLayout_4;
     QLabel *username_label_4;
     QLabel *WeChat_lb;
@@ -123,6 +126,25 @@ public:
 
         verticalLayout->addLayout(horizontalLayout_3);
 
+        horizontalLayout_6 = new QHBoxLayout();
+        horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
+        username_label_2 = new QLabel(UserMyInfoWin);
+        username_label_2->setObjectName(QStringLiteral("username_label_2"));
+
+        horizontalLayout_6->addWidget(username_label_2);
+
+        myboard_lb = new QLabel(UserMyInfoWin);
+        myboard_lb->setObjectName(QStringLiteral("myboard_lb"));
+        sizePolicy.setHeightForWidth(myboard_lb->sizePolicy().hasHeightForWidth());
+        myboard_lb->setSizePolicy(sizePolicy);
+
+        horizontalLayout_6->addWidget(myboard_lb);
+
+        horizontalLayout_6->setStretch(0, 1);
+        horizontalLayout_6->setStretch(1, 2);
+
+        verticalLayout->addLayout(horizontalLayout_6);
+
         horizontalLayout_4 = new QHBoxLayout();
         horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
         username_label_4 = new QLabel(UserMyInfoWin);
@@ -183,6 +205,8 @@ public:
         id_lb->setText(QString());
         username_label_3->setText(QApplication::translate("UserMyInfoWin", "\347\261\273 \345\236\213", nullptr));
         type_lb->setText(QString());
+        username_label_2->setText(QApplication::translate("UserMyInfoWin", "\347\256\241\347\220\206\347\232\204\347\211\210\351\235\242", nullptr));
+        myboard_lb->setText(QString());
         username_label_4->setText(QApplication::translate("UserMyInfoWin", "WeChat_ID", nullptr));
         WeChat_lb->setText(QString());
         username_label_5->setText(QApplication::translate("UserMyInfoWin", "\346\200\247\345\210\253", nullptr));

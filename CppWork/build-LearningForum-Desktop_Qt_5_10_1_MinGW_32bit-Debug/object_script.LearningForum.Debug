@@ -18,7 +18,10 @@ INPUT(
 ./debug\UserModerator.o
 ./debug\UserAdministrator.o
 ./debug\UserMyInfoWin.o
+./debug\UserAnonymous.o
+./debug\UserAnonymousWin.o
 ./debug\qrc_picture.o
+./debug\qrc_datafile.o
 ./debug\moc_BoardWin.o
 ./debug\moc_EnterWin.o
 ./debug\moc_RegistAdminWin.o
@@ -29,4 +32,5 @@ INPUT(
 ./debug\moc_AppointWin.o
 ./debug\moc_UserInfoWin.o
 ./debug\moc_UserMyInfoWin.o
+./debug\moc_UserAnonymousWin.o
 );

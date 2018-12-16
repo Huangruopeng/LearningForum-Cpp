@@ -704,11 +704,11 @@ public:
         scrollArea_7->setWidgetResizable(true);
         scrollAreaWidgetContents_8 = new QWidget();
         scrollAreaWidgetContents_8->setObjectName(QStringLiteral("scrollAreaWidgetContents_8"));
-        scrollAreaWidgetContents_8->setGeometry(QRect(0, 0, 1000, 1000));
+        scrollAreaWidgetContents_8->setGeometry(QRect(0, 0, 4000, 4000));
         sizePolicy.setHeightForWidth(scrollAreaWidgetContents_8->sizePolicy().hasHeightForWidth());
         scrollAreaWidgetContents_8->setSizePolicy(sizePolicy);
-        scrollAreaWidgetContents_8->setMinimumSize(QSize(1000, 1000));
-        scrollAreaWidgetContents_8->setMaximumSize(QSize(1000, 1000));
+        scrollAreaWidgetContents_8->setMinimumSize(QSize(4000, 4000));
+        scrollAreaWidgetContents_8->setMaximumSize(QSize(4000, 4000));
         verticalLayout_21 = new QVBoxLayout(scrollAreaWidgetContents_8);
         verticalLayout_21->setSpacing(6);
         verticalLayout_21->setContentsMargins(11, 11, 11, 11);
@@ -900,7 +900,7 @@ public:
 
         retranslateUi(BoardWin);
 
-        tabWidget1->setCurrentIndex(8);
+        tabWidget1->setCurrentIndex(7);
 
 
         QMetaObject::connectSlotsByName(BoardWin);

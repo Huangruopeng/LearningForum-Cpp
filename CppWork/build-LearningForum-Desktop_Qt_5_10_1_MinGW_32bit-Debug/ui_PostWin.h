@@ -53,6 +53,7 @@ public:
     QLabel *label_5;
     QScrollArea *scrollArea;
     QWidget *scrollAreaWidgetContents;
+    QVBoxLayout *verticalLayout_3;
     QListWidget *listWidget;
     QHBoxLayout *horizontalLayout_7;
     QLabel *label_7;
@@ -69,7 +70,7 @@ public:
     {
         if (PostWin->objectName().isEmpty())
             PostWin->setObjectName(QStringLiteral("PostWin"));
-        PostWin->resize(546, 439);
+        PostWin->resize(546, 510);
         verticalLayout_2 = new QVBoxLayout(PostWin);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         verticalLayout = new QVBoxLayout();
@@ -183,22 +184,29 @@ public:
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QStringLiteral("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 1000, 1000));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 4000, 4000));
         QSizePolicy sizePolicy2(QSizePolicy::Fixed, QSizePolicy::Fixed);
         sizePolicy2.setHorizontalStretch(0);
         sizePolicy2.setVerticalStretch(0);
         sizePolicy2.setHeightForWidth(scrollAreaWidgetContents->sizePolicy().hasHeightForWidth());
         scrollAreaWidgetContents->setSizePolicy(sizePolicy2);
-        scrollAreaWidgetContents->setMinimumSize(QSize(1000, 1000));
-        scrollAreaWidgetContents->setMaximumSize(QSize(1000, 1000));
+        scrollAreaWidgetContents->setMinimumSize(QSize(4000, 4000));
+        scrollAreaWidgetContents->setMaximumSize(QSize(4000, 4000));
+        verticalLayout_3 = new QVBoxLayout(scrollAreaWidgetContents);
+        verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
         listWidget = new QListWidget(scrollAreaWidgetContents);
         listWidget->setObjectName(QStringLiteral("listWidget"));
-        listWidget->setGeometry(QRect(0, 0, 4000000, 4000000));
-        sizePolicy2.setHeightForWidth(listWidget->sizePolicy().hasHeightForWidth());
-        listWidget->setSizePolicy(sizePolicy2);
-        listWidget->setMinimumSize(QSize(1000, 1000000));
+        QSizePolicy sizePolicy3(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy3.setHorizontalStretch(0);
+        sizePolicy3.setVerticalStretch(0);
+        sizePolicy3.setHeightForWidth(listWidget->sizePolicy().hasHeightForWidth());
+        listWidget->setSizePolicy(sizePolicy3);
+        listWidget->setMinimumSize(QSize(0, 0));
         listWidget->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
         listWidget->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+
+        verticalLayout_3->addWidget(listWidget);
+
         scrollArea->setWidget(scrollAreaWidgetContents);
 
         horizontalLayout_6->addWidget(scrollArea);

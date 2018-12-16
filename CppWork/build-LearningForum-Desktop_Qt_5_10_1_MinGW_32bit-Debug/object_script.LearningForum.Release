@@ -18,7 +18,10 @@ INPUT(
 ./release\UserModerator.o
 ./release\UserAdministrator.o
 ./release\UserMyInfoWin.o
+./release\UserAnonymous.o
+./release\UserAnonymousWin.o
 ./release\qrc_picture.o
+./release\qrc_datafile.o
 ./release\moc_BoardWin.o
 ./release\moc_EnterWin.o
 ./release\moc_RegistAdminWin.o
@@ -29,4 +32,5 @@ INPUT(
 ./release\moc_AppointWin.o
 ./release\moc_UserInfoWin.o
 ./release\moc_UserMyInfoWin.o
+./release\moc_UserAnonymousWin.o
 );

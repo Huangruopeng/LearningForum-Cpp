@@ -47,6 +47,7 @@ public:
     QLabel *label_4;
     QScrollArea *scrollArea;
     QWidget *scrollAreaWidgetContents;
+    QVBoxLayout *verticalLayout_3;
     QTextEdit *content_TE;
     QHBoxLayout *horizontalLayout_8;
     QPushButton *OK_btn;
@@ -144,17 +145,18 @@ public:
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QStringLiteral("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 1000, 1000));
-        QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 4000, 4000));
+        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(scrollAreaWidgetContents->sizePolicy().hasHeightForWidth());
         scrollAreaWidgetContents->setSizePolicy(sizePolicy1);
-        scrollAreaWidgetContents->setMinimumSize(QSize(1000, 1000));
-        scrollAreaWidgetContents->setMaximumSize(QSize(1000, 1000));
+        scrollAreaWidgetContents->setMinimumSize(QSize(4000, 4000));
+        scrollAreaWidgetContents->setMaximumSize(QSize(4000, 4000));
+        verticalLayout_3 = new QVBoxLayout(scrollAreaWidgetContents);
+        verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
         content_TE = new QTextEdit(scrollAreaWidgetContents);
         content_TE->setObjectName(QStringLiteral("content_TE"));
-        content_TE->setGeometry(QRect(0, 0, 1000, 1000));
         QSizePolicy sizePolicy2(QSizePolicy::Expanding, QSizePolicy::Expanding);
         sizePolicy2.setHorizontalStretch(0);
         sizePolicy2.setVerticalStretch(0);
@@ -162,6 +164,9 @@ public:
         content_TE->setSizePolicy(sizePolicy2);
         content_TE->setMinimumSize(QSize(1000, 1000));
         content_TE->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+
+        verticalLayout_3->addWidget(content_TE);
+
         scrollArea->setWidget(scrollAreaWidgetContents);
 
         horizontalLayout_5->addWidget(scrollArea);

@@ -38,6 +38,7 @@ public:
     QLabel *password_label;
     QLineEdit *password_LE;
     QHBoxLayout *horizontalLayout_2;
+    QRadioButton *Anonymous_btn;
     QRadioButton *Administractor_btn;
     QRadioButton *User_btn;
     QHBoxLayout *horizontalLayout;
@@ -98,6 +99,11 @@ public:
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
+        Anonymous_btn = new QRadioButton(EnterWin);
+        Anonymous_btn->setObjectName(QStringLiteral("Anonymous_btn"));
+
+        horizontalLayout_2->addWidget(Anonymous_btn);
+
         Administractor_btn = new QRadioButton(EnterWin);
         Administractor_btn->setObjectName(QStringLiteral("Administractor_btn"));
 
@@ -158,8 +164,9 @@ public:
         username_LE->setPlaceholderText(QApplication::translate("EnterWin", "byr001", nullptr));
         password_label->setText(QApplication::translate("EnterWin", "\345\257\206  \347\240\201", nullptr));
         password_LE->setPlaceholderText(QApplication::translate("EnterWin", "66", nullptr));
+        Anonymous_btn->setText(QApplication::translate("EnterWin", "\345\214\277\345\220\215\347\224\250\346\210\267", nullptr));
         Administractor_btn->setText(QApplication::translate("EnterWin", "\347\256\241\347\220\206\345\221\230", nullptr));
-        User_btn->setText(QApplication::translate("EnterWin", "\347\224\250\346\210\267", nullptr));
+        User_btn->setText(QApplication::translate("EnterWin", "\346\231\256\351\200\232\347\224\250\346\210\267", nullptr));
         Cancel_btn->setText(QApplication::translate("EnterWin", "Cancel", nullptr));
         OK_btn->setText(QApplication::translate("EnterWin", "OK", nullptr));
         sign_in_btn->setText(QApplication::translate("EnterWin", "\346\263\250\345\206\214", nullptr));
