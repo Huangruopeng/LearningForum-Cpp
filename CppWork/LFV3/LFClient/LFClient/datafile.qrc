@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/txt">
+        <file>fileadmin.txt</file>
+        <file>fileboard.txt</file>
+        <file>filegeneral.txt</file>
+        <file>filemoderator.txt</file>
+    </qresource>
+    <qresource prefix="/new/prefix1"/>
+</RCC>
